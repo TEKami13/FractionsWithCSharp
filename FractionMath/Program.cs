@@ -1,7 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
 
-using Math;
+using FractionMath;
 
 Fraction empty;
 Fraction oneHalf;

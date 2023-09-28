@@ -1,4 +1,4 @@
-using Math;
+using FractionMath;
 
 namespace FractionTask.Math;
 
@@ -114,6 +114,17 @@ public class Tests {
 
         // Assert 
         Assert.That(f1^f2, Is.True);
+    }
+    
+    [Test]
+    public void ToDouble_Method_ReturnsTrue() {
+        // Arrange
+        Fraction f1 = new Fraction(3, 12);
+
+        // Act
+
+        // Assert 
+        Assert.That(f1.ToDouble(), Is.EqualTo(0.25));
     }
     
     [Test]

@@ -1,0 +1,22 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=47c3d805_002D5f50_002D4b09_002Dac5d_002D4b23b39c5c57/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Equals_TwoEqualFractions_ReturnsTrue" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;NUnit3x::EED69F90-C8FD-4640-96AB-6176B015EA4D::net7.0::FractionTask.Math.Tests.Equals_TwoEqualFractions_ReturnsTrue&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=8b16767c_002Dbfb5_002D47a8_002D8b03_002D98dbd9ed7bd1/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Tests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;NUnit3x::EED69F90-C8FD-4640-96AB-6176B015EA4D::net7.0::FractionTask.Math.Tests&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=8fcbb718_002D27cc_002D4eba_002Dbdda_002D4a515724265e/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Equals_TwoEqualFractions_ReturnsTrue #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;NUnit3x::EED69F90-C8FD-4640-96AB-6176B015EA4D::net7.0::FractionTask.Math.Tests.Equals_TwoEqualFractions_ReturnsTrue&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::EED69F90-C8FD-4640-96AB-6176B015EA4D::net7.0::FractionTask.Math.Tests.Equals_ReduceOfFraction_ReturnsTrue&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=b8a1eaef_002D1938_002D49ad_002D817d_002D7995f0bfa474/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Equals_TwoEqualFractions_ReturnsTrue #3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;NUnit3x::EED69F90-C8FD-4640-96AB-6176B015EA4D::net7.0::FractionTask.Math.Tests.Equals_TwoEqualFractions_ReturnsTrue&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

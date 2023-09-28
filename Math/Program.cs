@@ -21,29 +21,29 @@ catch (ArgumentOutOfRangeException){
     return;
 }
 
-Console.WriteLine($"1111111Sum is: {oneHalf.ToDouble()}");
-Fraction sum = oneHalf.Add(threeQuarter);
-Fraction sum1 = Fraction.Add(oneHalf, threeQuarter);
-Console.WriteLine($"Sum is: {sum}");
+var sumAdd = oneHalf.Add(threeQuarter);
+Console.WriteLine($"Sum of the Add is: {sumAdd}");
 
-Fraction sumM = oneHalf.Subtract(threeQuarter);
-Console.WriteLine(sumM);
+var sumSubtract = oneHalf.Subtract(threeQuarter);
+Console.WriteLine($"Sum of the Subtract is: {sumSubtract}");
 
-Fraction SumMu = oneHalf* threeQuarter;
-Console.WriteLine(SumMu);
+var sumMultiply = oneHalf* threeQuarter;
+Console.WriteLine($"Sum of the Multiply is: {sumMultiply}");
 
-Fraction SumDi = Fraction.Divide(oneHalf, threeQuarter);
-Console.WriteLine(SumDi);
+var sumDivide = Fraction.Divide(oneHalf, threeQuarter);
+Console.WriteLine($"Sum of the divide is: {sumDivide}");
 
-Boolean SumGr = Fraction.GreaterThan(oneHalf, threeQuarter);
-Console.WriteLine(SumGr);
+var sumGreaterThan = Fraction.GreaterThan(oneHalf, threeQuarter);
+Console.WriteLine($"Is {oneHalf} greater than {threeQuarter}?\n" +
+                  $"{sumGreaterThan}");
 
-Boolean SumEq = Fraction.EqualThan(oneHalf, oneHalf2);
-Console.WriteLine(SumEq);
+var sumSmallerThan = Fraction.SmallerThan(oneHalf, threeQuarter);
+Console.WriteLine($"Is {oneHalf} smaller than {threeQuarter}?\n" +
+                  $"{sumSmallerThan}");
 
-Boolean SumSm = Fraction.SmallerThan(oneHalf, threeQuarter);
-Console.WriteLine(SumSm);
+var sumEqualThan = Fraction.EqualThan(oneHalf, oneHalf2);
+Console.WriteLine($"Is {oneHalf} equal to {threeQuarter}?\n" +
+                  $"{sumEqualThan}");
 
-Console.WriteLine(reduceTest.ToDouble());
-Console.WriteLine(reduceTest);
-Console.WriteLine(reduceTest.ToReduce());
+Console.WriteLine($"{reduceTest} as number {reduceTest.ToDouble()}");
+Console.WriteLine($"{reduceTest} as reduced as possible: {reduceTest.ToReduce()}");

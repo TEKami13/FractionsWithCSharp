@@ -42,7 +42,7 @@ public class Fraction {
      }
 
      public double ToDouble() {
-          double nmbr = (double)Numerator/Denominator;
+          var nmbr = (double)Numerator/Denominator;
           return nmbr;
      }
      #endregion

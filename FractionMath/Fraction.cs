@@ -1,4 +1,4 @@
-namespace Math; 
+namespace FractionMath; 
 
 public class Fraction {
      public Fraction(int numerator = 0, int denominator = 1) {
@@ -22,16 +22,20 @@ public class Fraction {
           int newDenominator = Denominator;
           double num = Numerator;
           double den = Denominator;
+          int bigNmbr;
+          if (num <= den) {
+               bigNmbr = (int)num;
+          } else {
+               bigNmbr = (int)den;
+          }
 
-          for (int i = 0; i < 10; i++) {
-               for (int j = 10; j >= 0; j--) {
+               for (int j = bigNmbr; j >= 0; j--) {
                     if (num % j == 0 && den % j == 0) {
                          newNumerator = (int)num/j;
                          newDenominator = (int)den/j;
                          num = newNumerator;
                          den = newDenominator;
                     } 
-               } 
           }
           sum = new(newNumerator, newDenominator);
           return sum;
@@ -43,7 +47,7 @@ public class Fraction {
 
      public double ToDouble() {
           var nmbr = (double)Numerator/Denominator;
-          return nmbr;
+          return Math.Round(nmbr, 2);;
      }
      #endregion
 

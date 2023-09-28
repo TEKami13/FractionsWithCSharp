@@ -46,4 +46,4 @@ Console.WriteLine(SumSm);
 
 Console.WriteLine(reduceTest.ToDouble());
 Console.WriteLine(reduceTest);
-Console.WriteLine(reduceTest.toReduce());
+Console.WriteLine(reduceTest.ToReduce());

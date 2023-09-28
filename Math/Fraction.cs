@@ -9,14 +9,14 @@ public class Fraction {
                Numerator = numerator;
                Denominator = denominator;
           }
-          
-          // Add method that reduces fraction.
      }
      
      public int Numerator { get; set; }
      public int Denominator { get; set; }
 
-     public Fraction toReduce() {
+     #region toSomethingCode
+     
+     public Fraction ToReduce() {
           Fraction sum;
           int newNumerator = Numerator;
           int newDenominator = Denominator;
@@ -45,7 +45,10 @@ public class Fraction {
           double nmbr = (double)Numerator/Denominator;
           return nmbr;
      }
+     #endregion
 
+     #region equalsCode
+     
      public override bool Equals(object? obj) {
           if (obj is Fraction other) {
                return Equals(other);
@@ -58,6 +61,7 @@ public class Fraction {
           //return Numerator == other.Numerator && Denominator == other.Denominator;
           return (Numerator * other.Denominator) == (Denominator * other.Numerator);
      }
+     #endregion
 
      #region mathCode
 
@@ -99,8 +103,8 @@ public class Fraction {
      }
      
      public static Fraction operator -(Fraction left, Fraction right) {
-          //return left.Add(right); // for ikke static metoden
-          return Subtract(left, right); //static metoden
+          //return left.Subtract(right); // For not static method
+          return Subtract(left, right); // Static method
      }
      #endregion
      
@@ -161,7 +165,6 @@ public class Fraction {
      }
 
      public static Boolean GreaterThan(Fraction left, Fraction right) {
-          Fraction sum;
           int rightNumerator = right.Numerator * left.Denominator;
           int newNumerator = left.Numerator * right.Denominator;
           if (newNumerator > rightNumerator) {
@@ -194,7 +197,6 @@ public class Fraction {
      }
 
      public static Boolean SmallerThan(Fraction left, Fraction right) {
-          Fraction sum;
           int rightNumerator = right.Numerator * left.Denominator;
           int newNumerator = left.Numerator * right.Denominator;
           if (newNumerator > rightNumerator) {
@@ -227,7 +229,6 @@ public class Fraction {
      }
 
      public static Boolean EqualThan(Fraction left, Fraction right) {
-          Fraction sum;
           int rightNumerator = right.Numerator * left.Denominator;
           int newNumerator = left.Numerator * right.Denominator;
           if (newNumerator > rightNumerator) {
@@ -239,10 +240,10 @@ public class Fraction {
           }
      }
 
-    // public static Boolean operator =(Fraction left, Fraction right) {
+     public static Boolean operator ^(Fraction left, Fraction right) {
           //return left.Add(right); // for ikke static metoden
-    //      return EqualThan(left, right); //static metoden
-    // }
+          return EqualThan(left, right); //static metoden
+     }
     #endregion
     
     #endregion
